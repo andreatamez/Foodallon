@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour {
         text.text = "Time: " + Mathf.Round(timeLeft) + "s";
         if (timeLeft < 0)
         {
-            //Application.loadedLevel();
+            //Application.Quit();
             Debug.Log("END");
         }
 	}
