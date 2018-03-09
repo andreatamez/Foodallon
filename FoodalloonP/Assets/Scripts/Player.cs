@@ -32,7 +32,9 @@ public class Player : MonoBehaviour {
         if (col.tag == "Rotten Food")
         {
             Debug.Log("Rotten");
-            rb.gravityScale += 2f;
+            rb.gravityScale += 1.5f;
+            GameVars.foodForce -= 0.8f;
+            GameVars.rottenPoints += 1;
         }
 
         Destroy(col.gameObject);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Food : MonoBehaviour {
 
     Rigidbody2D rb;
-    public float startForce;
+    float startForce = GameVars.foodForce;
 
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
