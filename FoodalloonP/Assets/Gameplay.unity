@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 678570127}
-  speed: 1
+  speed: 0.8
 --- !u!1 &1757238975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c593c807402af54418c8aff39627f41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 5
+  timeLeft: 60
   text: {fileID: 1335984427}
 --- !u!4 &1887431839
 Transform:
