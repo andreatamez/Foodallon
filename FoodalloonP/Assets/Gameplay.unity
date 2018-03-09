@@ -172,6 +172,46 @@ Transform:
   m_PrefabParentObject: {fileID: 4071731752866390, guid: ce69bd9be2684f342ade6e0cd03a07d0,
     type: 2}
   m_PrefabInternal: {fileID: 19148929}
+--- !u!1 &100703018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 100703019}
+  - component: {fileID: 100703020}
+  m_Layer: 0
+  m_Name: SceneObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &100703019
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100703018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 222.5003, y: 210.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100703020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100703018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a692aade9e2191049826981b4a13c927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &327001037
 Prefab:
   m_ObjectHideFlags: 0
@@ -1121,7 +1161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c593c807402af54418c8aff39627f41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 60
+  editScene: {fileID: 100703020}
+  timeLeft: 3
   text: {fileID: 1335984427}
 --- !u!4 &1887431839
 Transform:
