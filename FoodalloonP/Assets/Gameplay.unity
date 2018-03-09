@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 1357854626660458, guid: 3d767e2a52d3d0541bb12d9f86a155ae, type: 2}
+  rottenFood: {fileID: 1598241990107288, guid: 38b0f37cf8a27a245a9002f5192a0ad2, type: 2}
   spawnPoints:
   - {fileID: 19148930}
   - {fileID: 327001038}

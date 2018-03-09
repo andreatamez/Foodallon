@@ -5,6 +5,8 @@ using UnityEngine;
 public class FoodSpawner : MonoBehaviour {
 
     public GameObject foodPrefab;
+    public GameObject rottenFood;
+
     public Transform[] spawnPoints;
     public float min = .1f;
     public float max = 3f;
@@ -22,7 +24,8 @@ public class FoodSpawner : MonoBehaviour {
             yield return new WaitForSeconds(delay);
             int index = Random.Range(0, spawnPoints.Length);
             Transform point = spawnPoints[index];
-            GameObject food = Instantiate(foodPrefab, point.position, point.rotation);
+            GameObject typeFood = (Random.Range(0, 2) == 1) ? foodPrefab : rottenFood;
+            GameObject food = Instantiate(typeFood, point.position, point.rotation);
             Destroy(food, 5f);
         }
     }

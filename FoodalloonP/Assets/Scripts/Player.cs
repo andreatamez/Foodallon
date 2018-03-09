@@ -26,10 +26,16 @@ public class Player : MonoBehaviour {
             Debug.Log("crash");
             //rb.gravityScale += 0.5f;
             GameVars.points += 1;
-            Debug.Log(GameVars.points);
-            Destroy(col.gameObject);
-            return;
+            //Debug.Log(GameVars.points);
         }
+
+        if (col.tag == "Rotten Food")
+        {
+            Debug.Log("Rotten");
+            rb.gravityScale += 2f;
+        }
+
+        Destroy(col.gameObject);
 
     }
 }
