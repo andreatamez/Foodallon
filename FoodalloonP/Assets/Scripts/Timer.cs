@@ -15,6 +15,7 @@ public class Timer : MonoBehaviour {
         {
             //Application.Quit();
             Debug.Log("END");
+            EditScene.ChangeScene("Score");
         }
 	}
 }
