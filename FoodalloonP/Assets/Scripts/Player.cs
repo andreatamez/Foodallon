@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -9,7 +10,7 @@ public class Player : MonoBehaviour {
 
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-	}
+    }
 	
 	void Update () {
 		if (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0))
@@ -21,12 +22,16 @@ public class Player : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D col)
     {
 
+        if (col.tag == "EndMap")
+        {
+            Debug.Log("out of bounds");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         if (col.tag == "Food")
         {
             Debug.Log("crash");
-            //rb.gravityScale += 0.5f;
             GameVars.points += 1;
-            //Debug.Log(GameVars.points);
         }
 
         if (col.tag == "Rotten Food")
@@ -35,6 +40,7 @@ public class Player : MonoBehaviour {
             rb.gravityScale += 1.5f;
             GameVars.foodForce -= 0.8f;
             GameVars.rottenPoints += 1;
+            Debug.Log(rb.gravityScale);
         }
 
         Destroy(col.gameObject);
