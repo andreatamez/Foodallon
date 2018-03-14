@@ -13,6 +13,8 @@ public class FoodSpawner : MonoBehaviour {
 
 	
 	void Start () {
+
+
         StartCoroutine(SpawnFood());	
 	}
 
