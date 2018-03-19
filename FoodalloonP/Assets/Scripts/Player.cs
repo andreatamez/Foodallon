@@ -42,8 +42,6 @@ public class Player : MonoBehaviour {
             GameVars.rottenPoints += 1;
             Debug.Log(rb.gravityScale);
         }
-
         Destroy(col.gameObject);
-
     }
 }
