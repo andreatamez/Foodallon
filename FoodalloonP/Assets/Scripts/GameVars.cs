@@ -7,5 +7,5 @@ public class GameVars : MonoBehaviour {
     public static int rottenPoints = 0;
     public static float foodForce = 19;
     public static bool period = true;
-    public static float timeLeft = 60f;
+    public static float timeLeft = 30f;
 }
