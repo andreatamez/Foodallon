@@ -34,13 +34,19 @@ public class Player : MonoBehaviour {
             GameVars.points += 1;
         }
 
+        if (col.tag == "case")
+        {
+            Debug.Log("Crash case");
+            rb.gravityScale += 1.5f;
+        }
+
         if (col.tag == "Rotten Food")
         {
-            Debug.Log("Rotten");
-            rb.gravityScale += 1.5f;
+            //Debug.Log("Rotten");
+            //rb.gravityScale += 1.5f;
             GameVars.foodForce -= 0.8f;
             GameVars.rottenPoints += 1;
-            Debug.Log(rb.gravityScale);
+            //Debug.Log(rb.gravityScale);
         }
         Destroy(col.gameObject);
     }
