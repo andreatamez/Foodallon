@@ -19,7 +19,7 @@ public class Fly : MonoBehaviour {
 
     private void Move()
     {
-        if (Time.time - saveTime >= 10)
+        if (Time.time - saveTime >= GameVars.timeLimit)
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
         }

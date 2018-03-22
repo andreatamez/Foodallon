@@ -10,7 +10,6 @@ public class CaseSpawner : MonoBehaviour {
     public float min = .1f;
     public float max = 1f;
 
-
     void Start()
     {    
         StartCoroutine(period());
@@ -20,11 +19,11 @@ public class CaseSpawner : MonoBehaviour {
     {
         while (true)
         {
+            yield return new WaitForSeconds(GameVars.timeLimit);
             StartCoroutine("SpawnCase");
-            yield return new WaitForSeconds(10f);
             Debug.Log("stop");
+            yield return new WaitForSeconds(GameVars.timeLimit);
             StopCoroutine("SpawnCase");
-            yield return new WaitForSeconds(10f);
         } 
     }
 

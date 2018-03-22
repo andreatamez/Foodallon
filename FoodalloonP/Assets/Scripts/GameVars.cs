@@ -8,4 +8,5 @@ public class GameVars : MonoBehaviour {
     public static float foodForce = 19;
     public static bool period = true;
     public static float timeLeft = 30f;
+    public static float timeLimit = 5f;
 }
