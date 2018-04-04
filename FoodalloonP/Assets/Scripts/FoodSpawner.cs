@@ -27,6 +27,7 @@ public class FoodSpawner : MonoBehaviour {
             int index = Random.Range(0, spawnPoints.Length);
             Transform point = spawnPoints[index];
             GameObject typeFood = (Random.Range(0, 2) == 1) ? foodPrefab : rottenFood;
+            if (typeFood == foodPrefab) GameVars.totalFood += 1;
             GameObject food = Instantiate(typeFood, point.position, point.rotation);
             Destroy(food, 5f);
         }

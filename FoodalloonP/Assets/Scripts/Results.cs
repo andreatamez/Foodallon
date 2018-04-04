@@ -17,30 +17,36 @@ public class Results : MonoBehaviour {
     {
         int points = GameVars.points;
         int len = backgrounds.Length;
-        if (points == 5)
+        float finalScore = FinalScore();
+        if (finalScore <= 1 && finalScore > 0.8)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 1];
         }
-        else if (points == 4)
+        else if (finalScore <= 0.8 && finalScore > 0.6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 2];
         }
-        else if (points == 3)
+        else if (finalScore <= 0.6 && finalScore > 0.4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 3];
         }
-        else if (points == 2)
+        else if (finalScore <= 0.4 && finalScore > 0.2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 4];
         }
-        else if (points <= 1)
+        else if (finalScore <= 0.2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 5];
         }
     }
+
+    private float FinalScore()
+    {
+        return (float)(GameVars.points - GameVars.rottenPoints) / GameVars.totalFood;
+    }
 	
 	void Update () {
-        score.text = "Score: " + GameVars.points;
+        score.text = "Score: " + FinalScore() * 100f + "%";
         badScore.text = "Rotten: " + GameVars.rottenPoints;
     }
 }

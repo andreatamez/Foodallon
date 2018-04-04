@@ -9,4 +9,5 @@ public class GameVars : MonoBehaviour {
     public static bool period = true;
     public static float timeLeft = 10f;
     public static float timeLimit = 5f;
+    public static int totalFood = 0;
 }
