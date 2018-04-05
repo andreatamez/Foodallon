@@ -10,4 +10,15 @@ public class GameVars : MonoBehaviour {
     public static float timeLeft = 10f;
     public static float timeLimit = 5f;
     public static int totalFood = 0;
+
+    public static void ResetVars()
+    {
+             points = 0;
+        rottenPoints = 0;
+         foodForce = 19;
+        period = true;
+         timeLeft = 10f;
+        timeLimit = 5f;
+        totalFood = 0;
+    }
 }

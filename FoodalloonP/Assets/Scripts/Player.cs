@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
         if (col.tag == "EndMap")
         {
             Debug.Log("out of bounds");
+            GameVars.ResetVars();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
