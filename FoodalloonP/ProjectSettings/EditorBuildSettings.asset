@@ -12,5 +12,8 @@ EditorBuildSettings:
     path: Assets/Gameplay.unity
     guid: 2781e6deb24530c44a300ff4a2574938
   - enabled: 1
+    path: Assets/NY.unity
+    guid: bf0c09a056928114c9f2b46a6f5f9ed9
+  - enabled: 1
     path: Assets/Score.unity
     guid: 3c1fa5e69dd00474ea9362004e335a95
