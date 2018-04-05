@@ -5,17 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
-    public float jumpForce = 10f;
-    Rigidbody2D rb;
+    
+    public AudioClip jumpClip;
+    public AudioClip rottenClip;
+    private AudioSource audioJump;
+    private AudioSource audioRotten;
 
-	void Start () {
+    Rigidbody2D rb;
+    public float jumpForce = 10f;
+
+    void Start () {
         rb = GetComponent<Rigidbody2D>();
     }
-	
-	void Update () {
+
+    public AudioSource LoadClips(AudioClip clip)
+    {
+        AudioSource newAudio = gameObject.AddComponent<AudioSource>();
+        newAudio.clip = clip;
+        //newAudio.playOnAwake = true;
+        return newAudio;
+    }
+
+    public void Awake()
+    {
+        audioJump = LoadClips(jumpClip);
+        audioRotten = LoadClips(rottenClip);
+    }
+
+    void Update () {
 		if (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0))
         {
             rb.velocity = Vector2.up * jumpForce;
+            audioJump.Play();
         }
 	}
 
@@ -45,9 +66,9 @@ public class Player : MonoBehaviour {
         {
             //Debug.Log("Rotten");
             //rb.gravityScale += 1.5f;
+            audioRotten.Play();
             GameVars.foodForce -= 0.8f;
             GameVars.rottenPoints += 1;
-            //Debug.Log(rb.gravityScale);
         }
         Destroy(col.gameObject);
     }
