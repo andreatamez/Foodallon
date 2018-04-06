@@ -23,7 +23,6 @@ public class Fly : MonoBehaviour {
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
-        
     }
 
     public void OnTriggerEnter2D(Collider2D col)

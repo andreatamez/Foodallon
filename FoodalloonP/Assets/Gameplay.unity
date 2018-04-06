@@ -238,6 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e2c9d742286f34f8364957ec49cefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flyClip: {fileID: 8300000, guid: d824e67898e3c6e4b82eb3ff0fd57c7b, type: 3}
   casePrefab: {fileID: 1734051438253620, guid: 0055adc5bcf61854f8e97ae9ec4ac27c, type: 2}
   timePeriod: 10
   spawnPoints:
@@ -631,6 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec376ff5c93b4f541b26f0664b79a551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flyClip: {fileID: 8300000, guid: d824e67898e3c6e4b82eb3ff0fd57c7b, type: 3}
   speed: 7
 --- !u!58 &884883868
 CircleCollider2D:

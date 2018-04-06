@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CaseSpawner : MonoBehaviour {
+    public AudioClip flyClip;
+    private AudioSource audioFly;
 
     public GameObject casePrefab;
     public float timePeriod = 10f;
@@ -15,15 +17,29 @@ public class CaseSpawner : MonoBehaviour {
         StartCoroutine(period());
     }
 
+    public AudioSource LoadClips(AudioClip clip)
+    {
+        AudioSource newAudio = gameObject.AddComponent<AudioSource>();
+        newAudio.clip = clip;
+        return newAudio;
+    }
+
+    public void Awake()
+    {
+        audioFly = LoadClips(flyClip);
+    }
+
     IEnumerator period()
     {
         while (true)
         {
             yield return new WaitForSeconds(GameVars.timeLimit);
             StartCoroutine("SpawnCase");
-            Debug.Log("stop");
+            audioFly.Play();
+           //Debug.Log("stop");
             yield return new WaitForSeconds(GameVars.timeLimit);
             StopCoroutine("SpawnCase");
+            audioFly.Stop();
         } 
     }
 
