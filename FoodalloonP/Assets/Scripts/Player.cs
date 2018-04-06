@@ -8,8 +8,13 @@ public class Player : MonoBehaviour {
     
     public AudioClip jumpClip;
     public AudioClip rottenClip;
+    public AudioClip coinClip;
+    public AudioClip caseClip;
+
     private AudioSource audioJump;
     private AudioSource audioRotten;
+    private AudioSource audioCoin;
+    private AudioSource audioCase;
 
     Rigidbody2D rb;
     public float jumpForce = 10f;
@@ -22,7 +27,6 @@ public class Player : MonoBehaviour {
     {
         AudioSource newAudio = gameObject.AddComponent<AudioSource>();
         newAudio.clip = clip;
-        //newAudio.playOnAwake = true;
         return newAudio;
     }
 
@@ -30,6 +34,8 @@ public class Player : MonoBehaviour {
     {
         audioJump = LoadClips(jumpClip);
         audioRotten = LoadClips(rottenClip);
+        audioCoin = LoadClips(coinClip);
+        audioCase = LoadClips(caseClip);
     }
 
     void Update () {
@@ -52,13 +58,15 @@ public class Player : MonoBehaviour {
 
         if (col.tag == "Food")
         {
-            Debug.Log("crash");
+            //Debug.Log("crash");
+            audioCoin.Play();
             GameVars.points += 1;
         }
 
         if (col.tag == "case")
         {
             Debug.Log("Crash case");
+            audioCase.Play();
             rb.gravityScale += 1.5f;
         }
 
