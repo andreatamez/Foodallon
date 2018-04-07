@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
-    
     public AudioClip jumpClip;
     public AudioClip rottenClip;
     public AudioClip coinClip;
@@ -51,7 +50,7 @@ public class Player : MonoBehaviour {
 
         if (col.tag == "EndMap")
         {
-            Debug.Log("out of bounds");
+            //Debug.Log("out of bounds");
             GameVars.ResetVars();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -65,17 +64,16 @@ public class Player : MonoBehaviour {
 
         if (col.tag == "case")
         {
-            Debug.Log("Crash case");
+            //Debug.Log("Crash case");
             audioCase.Play();
             rb.gravityScale += 1.5f;
+            GameVars.foodForce -= 0.15f;
         }
 
         if (col.tag == "Rotten Food")
         {
             //Debug.Log("Rotten");
-            //rb.gravityScale += 1.5f;
             audioRotten.Play();
-            GameVars.foodForce -= 0.8f;
             GameVars.rottenPoints += 1;
         }
         Destroy(col.gameObject);

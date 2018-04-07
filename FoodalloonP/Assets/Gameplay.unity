@@ -243,8 +243,8 @@ MonoBehaviour:
   timePeriod: 10
   spawnPoints:
   - {fileID: 884883866}
-  min: 0.3
-  max: 0.4
+  min: 0.5
+  max: 0.5
 --- !u!4 &217836042
 Transform:
   m_ObjectHideFlags: 0
@@ -632,7 +632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec376ff5c93b4f541b26f0664b79a551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyClip: {fileID: 8300000, guid: d824e67898e3c6e4b82eb3ff0fd57c7b, type: 3}
   speed: 7
 --- !u!58 &884883868
 CircleCollider2D:
@@ -1356,11 +1355,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.91
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.11
+      value: -9.55
       objectReference: {fileID: 0}
     - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1390,6 +1389,10 @@ Prefab:
       propertyPath: m_Name
       value: EndMapHorizontal
       objectReference: {fileID: 0}
+    - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 189.34375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
   m_IsPrefabParent: 0
@@ -1402,11 +1405,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -16.1
+      value: -14.56
       objectReference: {fileID: 0}
     - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 4352622834692066, guid: de34d884f44e6e044b59e984c41ba4fe, type: 2}
       propertyPath: m_LocalPosition.z

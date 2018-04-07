@@ -10,6 +10,7 @@ public class GameVars : MonoBehaviour {
     public static float timeLeft = 60f;
     public static float timeLimit = 5f;
     public static int totalFood = 0;
+    public static bool moving = false;
 
     public static void ResetVars()
     {
@@ -20,5 +21,6 @@ public class GameVars : MonoBehaviour {
         timeLeft = 10f;
         timeLimit = 5f;
         totalFood = 0;
+        moving = false;
     }
 }

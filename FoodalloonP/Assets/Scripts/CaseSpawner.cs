@@ -9,8 +9,8 @@ public class CaseSpawner : MonoBehaviour {
     public GameObject casePrefab;
     public float timePeriod = 10f;
     public Transform[] spawnPoints;
-    public float min = .1f;
-    public float max = 1f;
+    public float min = 0.5f;
+    public float max = 0.5f;
 
     void Start()
     {    
@@ -33,10 +33,9 @@ public class CaseSpawner : MonoBehaviour {
     {
         while (true)
         {
-            yield return new WaitForSeconds(GameVars.timeLimit);
+            yield return new WaitForSeconds(GameVars.timeLimit-0.5f);
             StartCoroutine("SpawnCase");
             audioFly.Play();
-           //Debug.Log("stop");
             yield return new WaitForSeconds(GameVars.timeLimit);
             StopCoroutine("SpawnCase");
             audioFly.Stop();
@@ -53,7 +52,7 @@ public class CaseSpawner : MonoBehaviour {
             int index = Random.Range(0, spawnPoints.Length);
             Transform point = spawnPoints[index];
             GameObject caseObject = Instantiate(casePrefab, point.position, point.rotation);
-            Destroy(caseObject, 4f);
+            Destroy(caseObject, 2f);
         }
     }
 }

@@ -22,6 +22,7 @@ public class Fly : MonoBehaviour {
         if (Time.time - saveTime >= GameVars.timeLimit)
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
+            GameVars.moving = true;
         }
     }
 
@@ -29,8 +30,9 @@ public class Fly : MonoBehaviour {
     {
         if (col.tag == "EndMap")
         {
-            Debug.Log("Plane Crash");
+            //Debug.Log("Plane Crash");
             saveTime = Time.time;
+            GameVars.moving = false;
             gameObject.transform.position = originalPos;
         }
     }
