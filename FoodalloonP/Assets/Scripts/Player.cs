@@ -76,6 +76,15 @@ public class Player : MonoBehaviour {
             audioRotten.Play();
             GameVars.rottenPoints += 1;
         }
+
+        if (col.tag == "Plane")
+        {
+            GameVars.ResetVars();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        // se destruye todo lo que toca jugador
+        // considerar ponerlo en condiciones individuales
         Destroy(col.gameObject);
     }
 }

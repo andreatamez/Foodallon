@@ -642,7 +642,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -795,6 +795,10 @@ Prefab:
     - target: {fileID: 1117335115945976, guid: ce69bd9be2684f342ade6e0cd03a07d0, type: 2}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117335115945976, guid: ce69bd9be2684f342ade6e0cd03a07d0, type: 2}
+      propertyPath: m_TagString
+      value: Plane
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce69bd9be2684f342ade6e0cd03a07d0, type: 2}
