@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 659986195}
   - component: {fileID: 659986194}
   - component: {fileID: 659986193}
+  - component: {fileID: 659986197}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -345,6 +346,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!81 &659986197
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659986192}
+  m_Enabled: 1
 --- !u!1 &941910065
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a2b30ce24da28429a50362c6509c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winMixClip: {fileID: 8300000, guid: 6e74d1374d4849a4dbe5c9c4ad520634, type: 3}
+  levelupClip: {fileID: 8300000, guid: f7ce7ec3f2149cf4eb034a1e79b02c0d, type: 3}
+  looseClip: {fileID: 8300000, guid: a27d11232daa68548bde76d51b928c61, type: 3}
   score: {fileID: 1606957931}
   badScore: {fileID: 525473816}
   backgrounds:
@@ -443,7 +454,6 @@ GameObject:
   - component: {fileID: 1513349818}
   - component: {fileID: 1513349817}
   - component: {fileID: 1513349816}
-  - component: {fileID: 1513349815}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -451,13 +461,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1513349815
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1513349814}
-  m_Enabled: 1
 --- !u!124 &1513349816
 Behaviour:
   m_ObjectHideFlags: 0
