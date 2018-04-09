@@ -9,11 +9,26 @@ EditorBuildSettings:
     path: Assets/Menu.unity
     guid: 5b3b4fdbcd6ebf7499498fd1d0dca4a2
   - enabled: 1
+    path: Assets/Levels.unity
+    guid: aaf3de73e4f1318478305e56e62b353f
+  - enabled: 1
     path: Assets/Gameplay.unity
     guid: 2781e6deb24530c44a300ff4a2574938
   - enabled: 1
     path: Assets/NY.unity
-    guid: bf0c09a056928114c9f2b46a6f5f9ed9
+    guid: 6619430bc78cd954287acf85233d29a6
+  - enabled: 1
+    path: Assets/Francia.unity
+    guid: f8e6c98e4556c6b42b02554347a1fed2
+  - enabled: 1
+    path: Assets/China.unity
+    guid: a5044fb54942d7743a78095b364e4591
+  - enabled: 1
+    path: Assets/Mexico.unity
+    guid: d6316387be24d3f4ab318a2166068725
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Score.unity
     guid: 3c1fa5e69dd00474ea9362004e335a95
