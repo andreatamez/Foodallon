@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212534387448534690}
   - component: {fileID: 114484464641268892}
   - component: {fileID: 50044746998689018}
-  - component: {fileID: 58562498645182150}
+  - component: {fileID: 60775217525542850}
   m_Layer: 0
   m_Name: Food
   m_TagString: Food
@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1357854626660458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58562498645182150
-CircleCollider2D:
+--- !u!60 &60775217525542850
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -76,8 +76,61 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.09
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.8, y: 1.71}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.1899999, y: -0.575}
+      - {x: 1.36, y: -0.405}
+      - {x: 1.4, y: -0.325}
+      - {x: 1.4, y: -0.085}
+      - {x: 1.36, y: 0.005}
+      - {x: 1.3299999, y: 0.044999998}
+      - {x: 1.13, y: 0.255}
+      - {x: 1.1999999, y: 0.415}
+      - {x: 1.13, y: 0.435}
+      - {x: 1, y: 0.415}
+      - {x: 0.71, y: 0.555}
+      - {x: 0.7, y: 0.60499996}
+      - {x: 0.55, y: 0.675}
+      - {x: 0.51, y: 0.745}
+      - {x: 0.42, y: 0.805}
+      - {x: 0.22999999, y: 0.805}
+      - {x: 0.14999999, y: 0.835}
+      - {x: 0.08, y: 0.85499996}
+      - {x: -0.22999999, y: 0.85499996}
+      - {x: -0.41, y: 0.825}
+      - {x: -0.75, y: 0.805}
+      - {x: -0.89, y: 0.695}
+      - {x: -0.97999996, y: 0.585}
+      - {x: -1.03, y: 0.435}
+      - {x: -1.16, y: 0.275}
+      - {x: -1.24, y: 0.205}
+      - {x: -1.29, y: 0.21499999}
+      - {x: -1.35, y: 0.225}
+      - {x: -1.37, y: 0.205}
+      - {x: -1.36, y: 0.155}
+      - {x: -1.35, y: 0.024999999}
+      - {x: -1.4, y: -0.055}
+      - {x: -1.4, y: -0.325}
+      - {x: -1.35, y: -0.42499998}
+      - {x: -1.26, y: -0.53499997}
+      - {x: -1.05, y: -0.675}
+      - {x: -0.78999996, y: -0.765}
+      - {x: -0.59999996, y: -0.815}
+      - {x: -0.42999998, y: -0.84499997}
+      - {x: -0.39999998, y: -0.85499996}
+      - {x: 0.45, y: -0.85499996}
+      - {x: 0.78999996, y: -0.775}
+      - {x: 0.93, y: -0.72499996}
+      - {x: 1.13, y: -0.615}
 --- !u!114 &114484464641268892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f25e03e427b9b41a2bd100de1bd5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startForce: 19
 --- !u!212 &212534387448534690
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -124,8 +176,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.2643004, g: 0.037931025, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ced5aa3f56ab53345a8d0cd168ef5c50, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

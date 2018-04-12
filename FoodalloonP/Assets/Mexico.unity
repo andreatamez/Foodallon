@@ -804,6 +804,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79676fe38a5b581438b4a11627332062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mxFood:
+  - {fileID: 21300000, guid: ced5aa3f56ab53345a8d0cd168ef5c50, type: 3}
+  - {fileID: 21300000, guid: 71bb4d9925bef0046849791dba14bcda, type: 3}
+  - {fileID: 21300000, guid: cd2871dd6e9013d4e8615229e8f2694d, type: 3}
+  - {fileID: 21300000, guid: f908499fafe4f124d8afccf51e951d37, type: 3}
+  nyFood:
+  - {fileID: 21300000, guid: 641d9400205e2cb499346e06ec9fa360, type: 3}
+  - {fileID: 21300000, guid: 57f681f68ec81504780ddbeeedd4e0db, type: 3}
+  - {fileID: 21300000, guid: cc1f7af39688e18418f6bd8c4725bb53, type: 3}
+  - {fileID: 21300000, guid: 966a81057ee835e43b19ed730f33d114, type: 3}
+  chFood:
+  - {fileID: 21300000, guid: d502a2fb221063142af85057c3c984d0, type: 3}
+  - {fileID: 21300000, guid: 6f025a2d9941af941b5979fbfd233ec1, type: 3}
+  - {fileID: 21300000, guid: c4951da230059ec43aba1f20a80ad2fc, type: 3}
+  - {fileID: 21300000, guid: 01fac9c1f7bad9c48b3003343ee03c40, type: 3}
+  frFood:
+  - {fileID: 21300000, guid: 658a8f3b1fc6db64089562238a8a4c48, type: 3}
+  - {fileID: 21300000, guid: f4fa6e056eca05e499c64f178f6fea78, type: 3}
+  - {fileID: 21300000, guid: 57e5f6ecf06598e4ab5dd79abe575ff2, type: 3}
+  rotten: {fileID: 21300000, guid: d965f3767d3f0fd4989695d9989be8f6, type: 3}
   foodPrefab: {fileID: 1357854626660458, guid: 3d767e2a52d3d0541bb12d9f86a155ae, type: 2}
   rottenFood: {fileID: 1598241990107288, guid: 38b0f37cf8a27a245a9002f5192a0ad2, type: 2}
   spawnPoints:
