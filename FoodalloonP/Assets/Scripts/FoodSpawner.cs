@@ -18,7 +18,6 @@ public class FoodSpawner : MonoBehaviour {
     public float min = .1f;
     public float max = 3f;
 
-	
 	void Start ()
     {
         StartCoroutine(SpawnFood());	

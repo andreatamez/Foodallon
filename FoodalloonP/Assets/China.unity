@@ -804,6 +804,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79676fe38a5b581438b4a11627332062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mxFood: []
+  nyFood: []
+  chFood:
+  - {fileID: 21300000, guid: d502a2fb221063142af85057c3c984d0, type: 3}
+  - {fileID: 21300000, guid: 6f025a2d9941af941b5979fbfd233ec1, type: 3}
+  - {fileID: 21300000, guid: c4951da230059ec43aba1f20a80ad2fc, type: 3}
+  - {fileID: 21300000, guid: 01fac9c1f7bad9c48b3003343ee03c40, type: 3}
+  frFood: []
+  rotten: {fileID: 21300000, guid: d965f3767d3f0fd4989695d9989be8f6, type: 3}
   foodPrefab: {fileID: 1357854626660458, guid: 3d767e2a52d3d0541bb12d9f86a155ae, type: 2}
   rottenFood: {fileID: 1598241990107288, guid: 38b0f37cf8a27a245a9002f5192a0ad2, type: 2}
   spawnPoints:
