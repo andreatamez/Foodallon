@@ -850,9 +850,9 @@ MonoBehaviour:
   nyFood: []
   chFood: []
   frFood:
-  - {fileID: 21300000, guid: 658a8f3b1fc6db64089562238a8a4c48, type: 3}
-  - {fileID: 21300000, guid: f4fa6e056eca05e499c64f178f6fea78, type: 3}
-  - {fileID: 21300000, guid: 57e5f6ecf06598e4ab5dd79abe575ff2, type: 3}
+  - {fileID: 21300000, guid: e2f2ed192745ea640a6223dd3fed8837, type: 3}
+  - {fileID: 21300000, guid: 87f1c76417e6b8d42a9dc126602dca97, type: 3}
+  - {fileID: 21300000, guid: fba79cc64de3f6d4ba11a2b55838d125, type: 3}
   rotten: {fileID: 21300000, guid: d965f3767d3f0fd4989695d9989be8f6, type: 3}
   foodPrefab: {fileID: 1357854626660458, guid: 3d767e2a52d3d0541bb12d9f86a155ae, type: 2}
   rottenFood: {fileID: 1598241990107288, guid: 38b0f37cf8a27a245a9002f5192a0ad2, type: 2}
