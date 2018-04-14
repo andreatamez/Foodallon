@@ -16,13 +16,10 @@ public class Results : MonoBehaviour {
     public Text badScore;
     public Sprite[] backgrounds;
 
-    public string nextLevel = "Francia";
     public int levelToUnlock = 2;
 
     void Start () {
-        //audioLoose.Play();
         Performance();
-        GameVars.ResetVars();
     }
 
     public AudioSource LoadClips(AudioClip clip)
@@ -41,20 +38,22 @@ public class Results : MonoBehaviour {
 
     void Performance()
     {
-        int points = GameVars.points;
         int len = backgrounds.Length;
         float finalScore = FinalScore();
+        if (GameVars.levelToUnlock <= 4)
+            GameVars.levelToUnlock++;
+
         if (finalScore > 0.8)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 1];
             audioWin.Play();
-            PlayerPrefs.SetInt("b",levelToUnlock);
+            PlayerPrefs.SetInt(GameVars.versionName,GameVars.levelToUnlock);
         }
         else if (finalScore <= 0.8 && finalScore > 0.6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 2];
             audioLevel.Play();
-            PlayerPrefs.SetInt("b", levelToUnlock);
+            PlayerPrefs.SetInt(GameVars.versionName, GameVars.levelToUnlock);
         }
         else if (finalScore <= 0.6 && finalScore > 0.4)
         {

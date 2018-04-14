@@ -432,7 +432,7 @@ Prefab:
     - target: {fileID: 114793884276416792, guid: 8f2b5410a518e23459496ffa6a1fa25a,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_tag
+      value: Select
       objectReference: {fileID: 0}
     - target: {fileID: 114793884276416792, guid: 8f2b5410a518e23459496ffa6a1fa25a,
         type: 2}
@@ -690,7 +690,7 @@ Prefab:
     - target: {fileID: 114793884276416792, guid: 8f2b5410a518e23459496ffa6a1fa25a,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_tag
+      value: Select
       objectReference: {fileID: 0}
     - target: {fileID: 114793884276416792, guid: 8f2b5410a518e23459496ffa6a1fa25a,
         type: 2}
@@ -871,8 +871,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2051074129}
   m_HandleRect: {fileID: 2051074128}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.95068437
+  m_Value: 0.99999976
+  m_Size: 0.8116791
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

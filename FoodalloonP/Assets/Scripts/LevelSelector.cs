@@ -10,7 +10,7 @@ public class LevelSelector : MonoBehaviour {
 
     void Start()
     {
-        int levelReached = PlayerPrefs.GetInt("b", 1);
+        int levelReached = PlayerPrefs.GetInt(GameVars.versionName, 1);
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
@@ -18,12 +18,17 @@ public class LevelSelector : MonoBehaviour {
             {
                 levelButtons[i].interactable = false;
             }
-            
         }
     }
 
     public void Select (string level)
     {
-        SceneManager.LoadScene(level); 
+        SceneManager.LoadScene(level);
     }
+
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        GameVars.ResetVars();
+    } 
 }

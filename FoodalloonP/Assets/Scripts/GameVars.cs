@@ -12,6 +12,9 @@ public class GameVars : MonoBehaviour {
     public static int totalFood = 0;
     public static bool moving = false;
 
+    public static int levelToUnlock = 1;
+    public static string versionName = "12";
+
     public static void ResetVars()
     {
         points = 0;
