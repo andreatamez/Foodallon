@@ -21,7 +21,7 @@ public class GameVars : MonoBehaviour {
         rottenPoints = 0;
         foodForce = 19;
         period = true;
-        timeLeft = 10f;
+        timeLeft = 20f;
         timeLimit = 5f;
         totalFood = 0;
         moving = false;

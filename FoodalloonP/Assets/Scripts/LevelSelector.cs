@@ -23,6 +23,7 @@ public class LevelSelector : MonoBehaviour {
 
     public void Select (string level)
     {
+        ContMusic.Instance.gameObject.GetComponent<AudioSource>().Pause();
         SceneManager.LoadScene(level);
     }
 
