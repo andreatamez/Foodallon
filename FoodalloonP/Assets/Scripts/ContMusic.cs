@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ContMusic : MonoBehaviour {
-    void Start()
-    {
-
-    }
 
     //Play Global
     private static ContMusic instance = null;
+
+    void Start()
+    {
+        
+    }
+
     public static ContMusic Instance
     {
         get { return instance; }

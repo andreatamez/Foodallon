@@ -29,6 +29,7 @@ public class LevelSelector : MonoBehaviour {
 
     public void ReturnMenu()
     {
+        ContMusic.Instance.gameObject.GetComponent<AudioSource>().UnPause();
         SceneManager.LoadScene("Menu");
         GameVars.ResetVars();
     } 
