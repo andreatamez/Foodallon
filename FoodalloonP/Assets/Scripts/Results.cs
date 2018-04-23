@@ -40,19 +40,19 @@ public class Results : MonoBehaviour {
     {
         int len = backgrounds.Length;
         float finalScore = FinalScore();
-        if (GameVars.levelToUnlock <= 4)
-            GameVars.levelToUnlock++;
 
         if (finalScore > 0.8)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 1];
             audioWin.Play();
+            if (GameVars.levelToUnlock <= 4) { GameVars.levelToUnlock++; }
             PlayerPrefs.SetInt(GameVars.versionName,GameVars.levelToUnlock);
         }
         else if (finalScore <= 0.8 && finalScore > 0.6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[len - 2];
             audioLevel.Play();
+            if (GameVars.levelToUnlock <= 4) { GameVars.levelToUnlock++; }
             PlayerPrefs.SetInt(GameVars.versionName, GameVars.levelToUnlock);
         }
         else if (finalScore <= 0.6 && finalScore > 0.4)

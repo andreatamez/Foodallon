@@ -862,9 +862,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c4951da230059ec43aba1f20a80ad2fc, type: 3}
   - {fileID: 21300000, guid: 01fac9c1f7bad9c48b3003343ee03c40, type: 3}
   frFood:
-  - {fileID: 21300000, guid: 658a8f3b1fc6db64089562238a8a4c48, type: 3}
-  - {fileID: 21300000, guid: f4fa6e056eca05e499c64f178f6fea78, type: 3}
-  - {fileID: 21300000, guid: 57e5f6ecf06598e4ab5dd79abe575ff2, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   rotten: {fileID: 21300000, guid: d965f3767d3f0fd4989695d9989be8f6, type: 3}
   foodPrefab: {fileID: 1357854626660458, guid: 3d767e2a52d3d0541bb12d9f86a155ae, type: 2}
   rottenFood: {fileID: 1598241990107288, guid: 38b0f37cf8a27a245a9002f5192a0ad2, type: 2}
@@ -1309,7 +1309,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ffde901683dea7246b9444c2f5644e13, type: 2}
+  - {fileID: 2100000, guid: e781d558eee88f74ebce1c6c885dcde8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
