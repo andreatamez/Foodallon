@@ -59,6 +59,7 @@ public class Player : MonoBehaviour {
             //Debug.Log("crash");
             audioCoin.Play();
             GameVars.points += 1;
+            Destroy(col.gameObject);
         }
 
         if (col.tag == "case")
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour {
             audioCase.Play();
             rb.gravityScale += 1.5f;
             GameVars.foodForce -= 0.15f;
+            Destroy(col.gameObject);
         }
 
         if (col.tag == "Rotten Food")
@@ -74,16 +76,17 @@ public class Player : MonoBehaviour {
             //Debug.Log("Rotten");
             audioRotten.Play();
             GameVars.rottenPoints += 1;
+            Destroy(col.gameObject);
         }
 
         if (col.tag == "Plane")
         {
             GameVars.ResetVars();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        } 
 
         // se destruye todo lo que toca jugador
         // considerar ponerlo en condiciones individuales
-        Destroy(col.gameObject);
+        //Destroy(col.gameObject);
     }
 }

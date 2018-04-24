@@ -7,13 +7,13 @@ public class GameVars : MonoBehaviour {
     public static int rottenPoints = 0;
     public static float foodForce = 19;
     public static bool period = true;
-    public static float timeLeft = 5f;
+    public static float timeLeft = 20f;
     public static float timeLimit = 5f;
     public static int totalFood = 0;
     public static bool moving = false;
 
     public static int levelToUnlock = 1;
-    public static string versionName = "r";
+    public static string versionName = "w";
 
     public static void ResetVars()
     {
@@ -21,7 +21,7 @@ public class GameVars : MonoBehaviour {
         rottenPoints = 0;
         foodForce = 19;
         period = true;
-        timeLeft = 5f;
+        timeLeft = 20f;
         timeLimit = 5f;
         totalFood = 0;
         moving = false;

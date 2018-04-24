@@ -772,7 +772,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 2f469e5a5ad21064bba439a59de1827a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -877,9 +877,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d502a2fb221063142af85057c3c984d0, type: 3}
   - {fileID: 21300000, guid: 01fac9c1f7bad9c48b3003343ee03c40, type: 3}
   frFood:
-  - {fileID: 21300000, guid: 658a8f3b1fc6db64089562238a8a4c48, type: 3}
-  - {fileID: 21300000, guid: f4fa6e056eca05e499c64f178f6fea78, type: 3}
-  - {fileID: 21300000, guid: 57e5f6ecf06598e4ab5dd79abe575ff2, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   rotten: {fileID: 21300000, guid: d965f3767d3f0fd4989695d9989be8f6, type: 3}
   foodPrefab: {fileID: 1357854626660458, guid: 3d767e2a52d3d0541bb12d9f86a155ae, type: 2}
   rottenFood: {fileID: 1598241990107288, guid: 38b0f37cf8a27a245a9002f5192a0ad2, type: 2}
@@ -964,15 +964,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071731752866390, guid: ce69bd9be2684f342ade6e0cd03a07d0, type: 2}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4071731752866390, guid: ce69bd9be2684f342ade6e0cd03a07d0, type: 2}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4071731752866390, guid: ce69bd9be2684f342ade6e0cd03a07d0, type: 2}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_RootOrder
