@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Score.unity
     guid: 3c1fa5e69dd00474ea9362004e335a95
+  - enabled: 1
+    path: Assets/Credits.unity
+    guid: 876d96d94a946834b8985d316a977aae
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
