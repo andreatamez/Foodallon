@@ -861,7 +861,7 @@ MonoBehaviour:
   - {fileID: 1669740566}
   - {fileID: 799373516}
   min: 0
-  max: 0.7
+  max: 1
 --- !u!4 &902899105
 Transform:
   m_ObjectHideFlags: 0

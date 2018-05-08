@@ -23,6 +23,32 @@ public class FoodSpawner : MonoBehaviour {
         StartCoroutine(SpawnFood());	
 	}
 
+    int GetRottenProb(string level)
+    {
+        int prob = 0;
+        if (level == "NY")
+        {
+            prob = Random.Range(1, 101);
+        }
+
+        if (level == "Francia")
+        {
+            prob = Random.Range(1, 93);
+        }
+
+        if (level == "China")
+        {
+            prob = Random.Range(1, 87);
+        }
+
+        if (level == "Mexico")
+        {
+            prob = Random.Range(1, 77);
+        }
+
+        return prob;
+    }
+
     IEnumerator SpawnFood()
     {
         while (true)
@@ -31,10 +57,11 @@ public class FoodSpawner : MonoBehaviour {
             yield return new WaitForSeconds(delay);
             int index = Random.Range(0, spawnPoints.Length);
             Transform point = spawnPoints[index];
-            GameObject typeFood = (Random.Range(0, 2) == 1) ? foodPrefab : rottenFood;
+            string sceneName = SceneManager.GetActiveScene().name;
+            //GameObject typeFood = (Random.Range(0, 2) == 1) ? foodPrefab : rottenFood;
+            GameObject typeFood = (GetRottenProb(sceneName) >= 50) ? foodPrefab : rottenFood;
             if (typeFood == foodPrefab)
             {
-                string sceneName = SceneManager.GetActiveScene().name;
                 if (sceneName == "NY")
                 {
                     typeFood.GetComponent<SpriteRenderer>().sprite = nyFood[Random.Range(0, nyFood.Length)];
