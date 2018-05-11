@@ -15,11 +15,14 @@ public class Player : MonoBehaviour {
     private AudioSource audioCoin;
     private AudioSource audioCase;
 
+    string sceneName;
+
     Rigidbody2D rb;
     public float jumpForce = 10f;
 
     void Start () {
         rb = GetComponent<Rigidbody2D>();
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     public AudioSource LoadClips(AudioClip clip)
@@ -45,6 +48,56 @@ public class Player : MonoBehaviour {
         }
 	}
 
+    float GetPlayerGravity(string level)
+    {
+        float gravity = 1.5f;
+        if (level == "NY")
+        {
+            gravity = 1.5f;
+        }
+        if (level == "Francia")
+        {
+            gravity = 2f;
+        }
+
+        if (level == "China")
+        {
+            gravity = 2.5f;
+        }
+
+        if (level == "Mexico")
+        {
+            gravity = 3f;
+        }
+
+        return gravity;
+    }
+
+    /*float AddWeight(string level)
+    {
+        float gravity = 1.5f;
+        if (level == "NY")
+        {
+            gravity = 1.5f;
+        }
+        if (level == "Francia")
+        {
+            gravity = 2f;
+        }
+
+        if (level == "China")
+        {
+            gravity = 2.5f;
+        }
+
+        if (level == "Mexico")
+        {
+            gravity = 3f;
+        }
+
+        return gravity;
+    }*/
+
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "EndMap")
@@ -66,7 +119,7 @@ public class Player : MonoBehaviour {
         {
             //Debug.Log("Crash case");
             audioCase.Play();
-            rb.gravityScale += 1.5f;
+            rb.gravityScale += GetPlayerGravity(sceneName);
             GameVars.foodForce -= 0.15f;
             Destroy(col.gameObject);
         }
