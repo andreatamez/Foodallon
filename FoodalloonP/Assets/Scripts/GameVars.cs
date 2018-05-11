@@ -13,7 +13,7 @@ public class GameVars : MonoBehaviour {
     public static bool moving = false;
 
     public static int levelToUnlock = 1;
-    public static string versionName = "a1";
+    public static string versionName = "a2";
 
     public static void ResetVars()
     {
