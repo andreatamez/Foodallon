@@ -59,7 +59,7 @@ public class FoodSpawner : MonoBehaviour {
 
         if (level == "Francia")
         {
-            scale = new Vector3(0.9f, 0.9f, 0.9f);
+            scale = new Vector3(0.75f, 0.75f, 0.75f);
         }
 
         if (level == "China")

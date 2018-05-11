@@ -8,4 +8,8 @@ public class EditScene : MonoBehaviour {
     {
         SceneManager.LoadScene(scene);
     }
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 }

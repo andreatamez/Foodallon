@@ -893,8 +893,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2051074129}
   m_HandleRect: {fileID: 2051074128}
   m_Direction: 2
-  m_Value: 0.99999946
-  m_Size: 0.81416553
+  m_Value: 0.9999997
+  m_Size: 0.83916974
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9485294, g: 0, b: 0.05147059, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1389,7 +1389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Niveles
+  m_Text: LEVELS
 --- !u!222 &1469948824
 CanvasRenderer:
   m_ObjectHideFlags: 0

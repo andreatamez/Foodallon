@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameVars : MonoBehaviour {
     public static int points = 0;
     public static int rottenPoints = 0;
-    public static float foodForce = 19;
+    public static float foodForce = 20;
     public static bool period = true;
     public static float timeLeft = 30f;
     public static float timeLimit = 5f;
@@ -13,7 +13,7 @@ public class GameVars : MonoBehaviour {
     public static bool moving = false;
 
     public static int levelToUnlock = 1;
-    public static string versionName = "ABCDE";
+    public static string versionName = "a0";
 
     public static void ResetVars()
     {
