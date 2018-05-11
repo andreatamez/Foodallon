@@ -74,7 +74,7 @@ public class Results : MonoBehaviour {
 
     private float FinalScore()
     {
-        return (float) (GameVars.points - (GameVars.rottenPoints * 0f)) / (GameVars.totalFood * 0.70f); // entre 0.7 y 0.9
+        return (float) (GameVars.points - (GameVars.rottenPoints * 0.5f)) / (GameVars.totalFood * 0.8f); // entre 0.7 y 0.9
     }
 	
 	void Update () {
