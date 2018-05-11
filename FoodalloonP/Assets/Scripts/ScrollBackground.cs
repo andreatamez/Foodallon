@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScrollBackground : MonoBehaviour {
 
     public Text text;
-    public float speed = 0.5f;
+    float speed = 0.6f;
     Renderer rend;
 
     // Use this for initialization
