@@ -49,7 +49,7 @@ public class FoodSpawner : MonoBehaviour {
         return prob;
     }
 
-    Vector3 GetScale(string level)
+    Vector3 GetFoodScale(string level)
     {
         Vector3 scale = new Vector3(0.2f, 0.2f, 0.2f);
         if (level == "NY")
@@ -59,7 +59,7 @@ public class FoodSpawner : MonoBehaviour {
 
         if (level == "Francia")
         {
-            scale = new Vector3(0.7f, 0.7f, 0.7f);
+            scale = new Vector3(0.9f, 0.9f, 0.9f);
         }
 
         if (level == "China")
@@ -107,7 +107,7 @@ public class FoodSpawner : MonoBehaviour {
                 {
                     typeFood.GetComponent<SpriteRenderer>().sprite = mxFood[Random.Range(0,mxFood.Length)];
                 }
-                typeFood.transform.localScale = GetScale(sceneName);
+                typeFood.transform.localScale = GetFoodScale(sceneName);
                 GameVars.totalFood += 1;
             }
             else

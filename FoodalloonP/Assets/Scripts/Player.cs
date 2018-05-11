@@ -73,30 +73,30 @@ public class Player : MonoBehaviour {
         return gravity;
     }
 
-    /*float AddWeight(string level)
+    float AddWeight(string level)
     {
-        float gravity = 1.5f;
+        float weight = 0.5f;
         if (level == "NY")
         {
-            gravity = 1.5f;
+            weight = 0.1f;
         }
         if (level == "Francia")
         {
-            gravity = 2f;
+            weight = 0.12f;
         }
 
         if (level == "China")
         {
-            gravity = 2.5f;
+            weight = 0.12f;
         }
 
         if (level == "Mexico")
         {
-            gravity = 3f;
+            weight = 0.13f;
         }
 
-        return gravity;
-    }*/
+        return weight;
+    }
 
     public void OnTriggerEnter2D(Collider2D col)
     {
@@ -128,6 +128,7 @@ public class Player : MonoBehaviour {
         {
             //Debug.Log("Rotten");
             audioRotten.Play();
+            rb.gravityScale += AddWeight(sceneName);
             GameVars.rottenPoints += 1;
             Destroy(col.gameObject);
         }
