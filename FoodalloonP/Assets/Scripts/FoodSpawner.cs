@@ -49,6 +49,32 @@ public class FoodSpawner : MonoBehaviour {
         return prob;
     }
 
+    Vector3 GetScale(string level)
+    {
+        Vector3 scale = new Vector3(0.2f, 0.2f, 0.2f);
+        if (level == "NY")
+        {
+            scale = new Vector3(0.4f, 0.4f, 0.4f);
+        }
+
+        if (level == "Francia")
+        {
+            scale = new Vector3(0.7f, 0.7f, 0.7f);
+        }
+
+        if (level == "China")
+        {
+            scale = new Vector3(0.3f, 0.3f, 0.3f);
+        }
+
+        if (level == "Mexico")
+        {
+            scale = new Vector3(0.4f, 0.4f, 0.4f);
+        }
+
+        return scale;
+    }
+
     IEnumerator SpawnFood()
     {
         while (true)
@@ -81,13 +107,13 @@ public class FoodSpawner : MonoBehaviour {
                 {
                     typeFood.GetComponent<SpriteRenderer>().sprite = mxFood[Random.Range(0,mxFood.Length)];
                 }
-                typeFood.transform.localScale = (new Vector3(0.5f, 0.5f, 0.5f));
+                typeFood.transform.localScale = GetScale(sceneName);
                 GameVars.totalFood += 1;
             }
             else
             {
                 typeFood.GetComponent<SpriteRenderer>().sprite = rotten;
-                typeFood.transform.localScale = (new Vector3(0.2f, 0.2f, 0.2f));
+                typeFood.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             }
             
             GameObject food = Instantiate(typeFood, point.position, point.rotation);
